@@ -4,6 +4,6 @@ def my_each(names = ["arel", "jon", "logan", "spencer"])
   yield(names[i])
   i = i + 1 
   my_each(names) do |i|
-  puts i
+  
 end
 end
