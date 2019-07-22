@@ -1,9 +1,9 @@
-def my_each(names = ["arel", "jon", "logan", "spencer"]) 
+def my_each(array)
   i = 0
-  while i < names.length 
-  yield(names[i])
-  i = i + 1 
-  my_each(names) do |i|
-  puts i
-end
+  collection = []
+  while i < array.length
+    collection << yield(array[i])
+    i += 1
+  end
+  collection
 end
